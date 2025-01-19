@@ -1,0 +1,19 @@
+# IDE ve Editör dosyaları
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db
+
+# Node modülleri (eğer kullanılacaksa)
+node_modules/
+
+# Geçici dosyalar
+*.log
+*.tmp
+
+*.swp
+*.swo

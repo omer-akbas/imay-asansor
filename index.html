@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İmay Asansör - Rize</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="İmay Asansör Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#anasayfa">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hizmetler">Hizmetlerimiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#iletisim">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="anasayfa" class="hero-section">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- Modern mimari yapı -->
+                    <img src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg" class="d-block w-100" alt="Modern Mimari Yapı">
+                    <div class="carousel-caption">
+                        <h1 class="display-4 fw-bold">İmay Asansör</h1>
+                        <p class="lead">Rize ve tüm Karadeniz bölgesinde profesyonel asansör hizmetleri</p>
+                        <a href="#iletisim" class="btn btn-primary btn-lg">Bize Ulaşın</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- Modern inşaat projesi -->
+                    <img src="https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg" class="d-block w-100" alt="Modern İnşaat Projesi">
+                    <div class="carousel-caption">
+                        <h2 class="display-4 fw-bold">Profesyonel Kurulum</h2>
+                        <p class="lead">En son teknoloji ile güvenli asansör kurulum hizmetleri</p>
+                        <a href="#hizmetler" class="btn btn-primary btn-lg">Hizmetlerimiz</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- Lüks rezidans projesi -->
+                    <img src="https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg" class="d-block w-100" alt="Lüks Rezidans Projesi">
+                    <div class="carousel-caption">
+                        <h2 class="display-4 fw-bold">7/24 Teknik Servis</h2>
+                        <p class="lead">Düzenli bakım ve hızlı arıza çözüm hizmetleri</p>
+                        <a href="#iletisim" class="btn btn-primary btn-lg">Servis Çağır</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Önceki</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Sonraki</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Hizmetler Section -->
+    <section id="hizmetler" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Hizmetlerimiz</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <i class="fas fa-cog service-icon"></i>
+                            <h3>Asansör Kurulumu</h3>
+                            <p>Modern ve güvenli asansör sistemleri kurulumu ile binanızın değerini artırın. En son teknoloji ürünleri ile profesyonel hizmet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <i class="fas fa-tools service-icon"></i>
+                            <h3>Bakım Hizmetleri</h3>
+                            <p>Düzenli bakım ve kontrol hizmetleri ile asansörlerinizin ömrünü uzatın. Periyodik bakım ve önleyici kontroller.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card service-card">
+                        <div class="card-body">
+                            <i class="fas fa-headset service-icon"></i>
+                            <h3>Teknik Destek</h3>
+                            <p>7/24 teknik destek ve hızlı arıza giderme hizmetleri ile her zaman yanınızdayız. Acil müdahale ekibi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bakım Hizmetleri Detay -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="maintenance-details p-4 bg-light rounded-3" data-aos="fade-up">
+                        <h3 class="text-primary mb-4">
+                            <i class="fas fa-clipboard-check me-2"></i>
+                            Profesyonel Aylık Bakım Hizmetlerimiz
+                        </h3>
+                        <div class="maintenance-content">
+                            <p class="lead mb-4">
+                                İmay Asansör olarak, bina sakinlerinin güvenliği ve konforunu en üst düzeyde tutmak için kapsamlı aylık bakım hizmetleri sunmaktayız.
+                            </p>
+                            
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h4 class="h5 mb-3">Aylık Bakım Kapsamımız:</h4>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check-circle text-success me-2"></i>Mekanik aksamların detaylı kontrolü</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i>Elektrik sistemlerinin test edilmesi</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i>Güvenlik sistemlerinin kontrolü</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i>Kabin içi ekipman kontrolü</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i>Fren sistemlerinin test edilmesi</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i>Kapı mekanizmalarının bakımı</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="h5 mb-3">Bakım Avantajlarımız:</h4>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-star text-warning me-2"></i>Düzenli bakımla arıza riskinin minimuma indirilmesi</li>
+                                        <li><i class="fas fa-star text-warning me-2"></i>Enerji verimliliğinin artırılması</li>
+                                        <li><i class="fas fa-star text-warning me-2"></i>Asansör ömrünün uzatılması</li>
+                                        <li><i class="fas fa-star text-warning me-2"></i>7/24 acil servis desteği</li>
+                                        <li><i class="fas fa-star text-warning me-2"></i>Yedek parça önceliği</li>
+                                        <li><i class="fas fa-star text-warning me-2"></i>Periyodik bakım raporlaması</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="maintenance-info bg-white p-4 rounded-3 shadow-sm">
+                                <h4 class="h5 text-primary mb-3">Neden Düzenli Bakım Önemlidir?</h4>
+                                <p>
+                                    Asansörler, bina içi ulaşımın vazgeçilmez unsurlarıdır ve günlük yaşamın önemli bir parçasını oluştururlar. Düzenli bakım, sadece asansörün sorunsuz çalışmasını sağlamakla kalmaz, aynı zamanda:
+                                </p>
+                                <ul class="mb-4">
+                                    <li>Yolcu güvenliğini maksimum seviyede tutar</li>
+                                    <li>Beklenmedik arızaları önler</li>
+                                    <li>Asansörün kullanım ömrünü uzatır</li>
+                                    <li>İşletme maliyetlerini düşürür</li>
+                                    <li>Enerji tüketimini optimize eder</li>
+                                </ul>
+                                <p class="mb-0">
+                                    İmay Asansör olarak, T.C. Sanayi ve Teknoloji Bakanlığı'nın belirlediği standartlara uygun şekilde, deneyimli teknik ekibimizle aylık periyodik bakım hizmetleri sunmaktayız. Bakım sözleşmesi yapılan tüm binalarımızda, asansörlerinizin güvenli ve verimli çalışmasını garanti altına alıyoruz.
+                                </p>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <a href="#iletisim" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-calendar-check me-2"></i>
+                                    Bakım Teklifi Alın
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kurulum Hizmetleri Detay -->
+    <section id="kurulum" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <i class="fas fa-building text-primary"></i>
+                Profesyonel Asansör Kurulum Hizmetleri
+            </h2>
+            
+            <!-- İstatistikler -->
+            <div class="row mb-5 text-center stats-container">
+                <div class="col-md-3 mb-4">
+                    <div class="stat-card p-4 bg-white rounded-3 shadow-sm">
+                        <i class="fas fa-check-circle text-success mb-3 stat-icon"></i>
+                        <h3 class="counter">500</h3>
+                        <p class="text-muted">Başarılı Kurulum</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="stat-card p-4 bg-white rounded-3 shadow-sm">
+                        <i class="fas fa-handshake text-primary mb-3 stat-icon"></i>
+                        <h3 class="counter">50</h3>
+                        <p class="text-muted">Partner Firma</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="stat-card p-4 bg-white rounded-3 shadow-sm">
+                        <i class="fas fa-city text-warning mb-3 stat-icon"></i>
+                        <h3 class="counter">15</h3>
+                        <p class="text-muted">Hizmet Verilen İl</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="stat-card p-4 bg-white rounded-3 shadow-sm">
+                        <i class="fas fa-users text-info mb-3 stat-icon"></i>
+                        <h3 class="counter">30</h3>
+                        <p class="text-muted">Uzman Personel</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kurulum Özellikleri -->
+            <div class="row align-items-center mb-5">
+                <div class="col-md-6" data-aos="fade-right">
+                    <div class="installation-features p-4 bg-white rounded-3 shadow-sm">
+                        <h3 class="h4 text-primary mb-4">Neden İmay Asansör?</h3>
+                        <ul class="feature-list">
+                            <li>
+                                <i class="fas fa-clock text-primary"></i>
+                                <strong>Hızlı Kurulum:</strong> Ortalama 2-3 hafta içinde kurulum tamamlama
+                            </li>
+                            <li>
+                                <i class="fas fa-certificate text-primary"></i>
+                                <strong>Sertifikalı Ekip:</strong> TSE ve CE standartlarına uygun montaj
+                            </li>
+                            <li>
+                                <i class="fas fa-tools text-primary"></i>
+                                <strong>Modern Ekipman:</strong> En son teknoloji kurulum ekipmanları
+                            </li>
+                            <li>
+                                <i class="fas fa-shield-alt text-primary"></i>
+                                <strong>Garanti:</strong> 2 yıl tam kurulum garantisi
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marked-alt text-primary"></i>
+                                <strong>Geniş Hizmet Ağı:</strong> Tüm Karadeniz Bölgesi'nde hizmet
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="partner-benefits p-4 bg-white rounded-3 shadow-sm">
+                        <h3 class="h4 text-primary mb-4">Partner Firmalara Özel Avantajlar</h3>
+                        <div class="benefit-cards">
+                            <div class="benefit-card mb-3">
+                                <h4 class="h6"><i class="fas fa-percentage text-success"></i> Özel Fiyatlandırma</h4>
+                                <p>Düzenli iş ortaklarımıza özel indirim oranları</p>
+                            </div>
+                            <div class="benefit-card mb-3">
+                                <h4 class="h6"><i class="fas fa-clock text-warning"></i> Öncelikli Hizmet</h4>
+                                <p>Partner firmalara özel hızlandırılmış kurulum süreçleri</p>
+                            </div>
+                            <div class="benefit-card mb-3">
+                                <h4 class="h6"><i class="fas fa-hands-helping text-info"></i> Proje Desteği</h4>
+                                <p>Teknik çizim ve projelendirme konusunda ücretsiz destek</p>
+                            </div>
+                            <div class="benefit-card">
+                                <h4 class="h6"><i class="fas fa-truck text-danger"></i> Lojistik Destek</h4>
+                                <p>Şantiye alanına ücretsiz malzeme sevkiyatı</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Çağrı Butonu -->
+            <div class="text-center">
+                <a href="#iletisim" class="btn btn-primary btn-lg">
+                    <i class="fas fa-handshake me-2"></i>
+                    İş Ortağımız Olun
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim Section -->
+    <section id="iletisim" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">İletişim</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24029.751437338674!2d40.50770083955077!3d41.02536099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40675d12dbc06c31%3A0x8d8d7ce4126371f7!2sRize%20Merkez%2C%20Rize!5e0!3m2!1str!2str!4v1709913051099!5m2!1str!2str"
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="contact-form-container bg-white p-4 rounded-3 shadow-sm">
+                        <h3 class="h4 text-primary mb-4">Bize Ulaşın</h3>
+                        <form class="contact-form">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Adınız Soyadınız">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="E-posta Adresiniz">
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Telefon Numaranız">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="4" placeholder="Mesajınız"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-paper-plane me-2"></i>Mesaj Gönder
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <img src="image/logo.png" alt="İmay Asansör Logo" height="50" class="mb-3">
+                    <p class="text-light">Rize ve tüm Karadeniz bölgesinde profesyonel asansör kurulum, bakım ve teknik destek hizmetleri sunuyoruz.</p>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-light mb-3">İletişim Bilgileri</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li><i class="fas fa-phone"></i> 0 533 349 20 53</li>
+                        <li><i class="fas fa-user"></i> İsmail AYCA</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Merkez, Rize</li>
+                        <li><i class="fas fa-clock"></i> 7/24 Teknik Destek</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="text-light mb-3">Hızlı Erişim</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#anasayfa">Ana Sayfa</a></li>
+                        <li><a href="#hizmetler">Hizmetlerimiz</a></li>
+                        <li><a href="#kurulum">Kurulum</a></li>
+                        <li><a href="#iletisim">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-md-6">
+                        <p class="mb-0 text-light">&copy; 2024 İmay Asansör. Tüm hakları saklıdır.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0 text-light">
+                            <i class="fas fa-phone-alt me-2"></i>7/24 Acil Servis: 0 533 349 20 53
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html> 
