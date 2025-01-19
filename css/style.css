@@ -46,23 +46,26 @@ body {
 /* Mobil cihazlar için carousel yükseklik ayarı */
 @media (max-width: 768px) {
     #heroCarousel .carousel-item {
-        height: 70vh;
+        height: 100vh;
     }
     
     .carousel-caption {
-        bottom: 30%;
-        padding: 0 15px;
+        bottom: 35%;
+        padding: 0 20px;
+        width: 100%;
+        left: 0;
+        right: 0;
     }
     
     .carousel-caption h1,
     .carousel-caption h2 {
-        font-size: 1.8rem;
-        margin-bottom: 0.5rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
     }
     
     .carousel-caption .lead {
-        font-size: 1rem;
-        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
     }
     
     .carousel-caption .btn {
@@ -126,7 +129,9 @@ body {
 /* Mobil için düzenleme */
 @media (max-width: 768px) {
     .service-card {
-        min-height: 250px;
+        margin: 0 0 2rem 0;
+        min-height: auto;
+        padding: 2rem 1rem;
     }
     
     .service-card .card-body {
@@ -422,7 +427,11 @@ body {
 
 @media (max-width: 768px) {
     .map-container {
-        margin-bottom: 2rem;
+        height: 300px;
+    }
+
+    .map-container iframe {
+        height: 100% !important;
     }
 }
 
@@ -463,61 +472,153 @@ html {
     pointer-events: none;
 }
 
-/* Mobil Optimizasyonları */
+/* Mobil Optimizasyonları - Güncelleme */
 @media (max-width: 768px) {
-    /* Section başlıkları */
-    section h2 {
-        font-size: 1.8rem;
-        margin-bottom: 2rem;
+    /* Hero Section düzeltmeleri */
+    #heroCarousel .carousel-item {
+        height: 100vh;
     }
-
-    /* İstatistik kartları */
-    .stat-card {
+    
+    .carousel-caption {
+        bottom: 35%;
+        padding: 0 20px;
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+    
+    .carousel-caption h1,
+    .carousel-caption h2 {
+        font-size: 2rem;
         margin-bottom: 1rem;
     }
     
-    .counter {
-        font-size: 2rem;
+    .carousel-caption .lead {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
     }
 
-    /* Bakım detayları */
+    /* Navbar düzeltmeleri */
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-collapse {
+        background: var(--primary-color);
+        border-radius: 8px;
+        padding: 1rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Section padding düzeltmeleri */
+    section {
+        padding: 3rem 0 !important;
+    }
+
+    /* Hizmet kartları düzeltmeleri */
+    .service-card {
+        margin: 0 0 2rem 0;
+        min-height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .service-card .card-body {
+        padding: 1.5rem;
+    }
+
+    /* İstatistik kartları düzeltmeleri */
+    .stat-card {
+        margin-bottom: 1.5rem;
+        padding: 1.5rem !important;
+    }
+
+    /* Bakım detayları düzeltmeleri */
     .maintenance-details {
         padding: 1.5rem !important;
     }
-    
+
     .maintenance-content {
         font-size: 1rem;
+        line-height: 1.6;
     }
 
-    /* Footer düzenlemeleri */
+    /* İletişim formu düzeltmeleri */
+    .contact-form-container {
+        margin-top: 2rem;
+        padding: 1.5rem !important;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    .map-container iframe {
+        height: 100% !important;
+    }
+
+    /* Footer düzeltmeleri */
     .footer {
         text-align: center;
+        padding: 2rem 0 1rem;
     }
-    
-    .footer-links, 
-    .footer-contact {
-        margin-bottom: 2rem;
+
+    .footer-bottom {
+        text-align: center;
     }
-    
-    .footer img {
-        margin: 0 auto;
-        display: block;
+
+    .footer-bottom .text-md-end {
+        text-align: center !important;
+        margin-top: 1rem;
     }
 }
 
-/* Küçük mobil cihazlar için ek düzenlemeler */
+/* Daha küçük mobil cihazlar için ek düzeltmeler */
 @media (max-width: 576px) {
+    .carousel-caption h1,
+    .carousel-caption h2 {
+        font-size: 1.75rem;
+    }
+
+    .carousel-caption .lead {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.75rem;
+    }
+
+    .service-icon {
+        font-size: 3rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* iPhone SE gibi çok küçük ekranlar için */
+@media (max-width: 375px) {
     .carousel-caption h1,
     .carousel-caption h2 {
         font-size: 1.5rem;
     }
-    
+
+    .carousel-caption .lead {
+        font-size: 0.9rem;
+    }
+
     .btn-lg {
         padding: 0.4rem 0.8rem;
         font-size: 0.9rem;
-    }
-    
-    .service-card {
-        margin: 0 10px 1rem;
     }
 } 
